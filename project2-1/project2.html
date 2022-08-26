@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="forms/my data.php" method="get">
+      <fieldset style="text-align: center">
+        <legend><h3>Hotel Guest Registration Form</h3></legend>
+        <label for="nam">First Name and Last Name</label>
+        <input type="text" name="name" id="nam" />
+
+        <label for="tel">Mobile Number </label>
+        <input type="tel" name="phone" id="tel" />
+
+        <label
+          >city
+          <input type="text" name="city" style="width: 10%" />
+        </label>
+        <br />
+        <br />
+        <label
+          >Address
+          <input type="text" name="address" style="width: 25%" />
+        </label>
+        <label
+          >Postal / Zip Code
+          <input type="text" name="zip" />
+        </label>
+        <br />
+        <br />
+        <label for="card">Uploud your ID card</label>
+        <input type="file" name="file" id="card" />
+        <fieldset>
+          <legend><h4>Booking Information</h4></legend>
+
+          <label for="date">Check-in Date </label>
+          <input type="date" name="date" id="date" style="width: 15%" />
+          <label for="date">Check-out Date </label>
+          <input type="date" name="date" id="date" style="width: 15%" />
+          <br />
+          <br />
+          <label
+            >Number of Guests in Room:
+            <input
+              type="number"
+              name="number"
+              style="width: 5%"
+              min="2"
+              max="10"
+              placeholder="1"
+            />
+          </label>
+          <br /><br />
+          <label for="num">Number of children </label>
+          <select name="num" style="width: 80px">
+            <option value="none" selected disabled>choose</option>
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+            <option value="five">5</option>
+          </select>
+          <br />
+          <br />
+          <fieldset>
+            <legend><h4>Room specifications</h4></legend>
+            <label>Room Type</label>
+            <select name="room type" style="width: 150px">
+              <option value="none" selected disabled>Please Select</option>
+              <option value="single">Single ($100)</option>
+              <option value="Double">Double ($100)</option>
+              <option value="Queen">Queen ($200)</option>
+              <option value="King">King ($210)</option>
+              <option value="2-Bedroom ">2-Bedroom ($350)</option>
+              <option value="Suite ">Suite ($500)</option>
+            </select>
+            <br />
+            <br />
+            <label for="Smoking Room">Smoking room:</label>
+            <input type="checkbox" name="Yes" />
+            <label for="smoking room">Yes</label>
+            <input type="checkbox" name="No" />
+            <label for="smoking room">No</label>
+            <br /><br />
+            <label for="wifi">Lease Pocket Wifi:</label>
+            <input type="radio" name="wifi" value="Yes" />
+            <label for="wifi">Yes</label>
+            <input type="radio" name="wifi" value="No" />
+            <label for="wifi">No</label>
+            <br /><br />
+            <label for="service">Free Shuttle Service: </label>
+            <input type="radio" name="service" value="Yes" />
+            <label for="service">Yes</label>
+            <input type="radio" name="service" value="No" />
+            <label for="service">No</label>
+            <br /><br />
+            <label for="price">Price range:</label>
+            <small>100$</small>
+            <input
+              type="range"
+              name="range"
+              id="price"
+              min="100"
+              max="500"
+              step="100"
+            />
+            <small>500$</small>
+            <br /><br />
+            <label for="back">pick-up Date</label>
+            <input type="datetime-local" name="pick-up" id="back" />
+            <br /><br />
+            <label for="location">Pick-up Location: </label>
+            <br />
+
+            <textarea name="text" id="cocation" cols="40" rows="10"></textarea>
+            <br />
+          </fieldset>
+          <br />
+          <label for=" Amount">Total Amount</label>
+
+          <input
+            type="text"
+            name="amo"
+            id="amount"
+            width="30%"
+            placeholder="$0"
+          />
+          <br />
+        </fieldset>
+        <br />
+        <input type="button" value="Send" style="width: 7%" />
+        <input type="button" value="Delet" style="width: 7%" />
+      </fieldset>
+    </form>
+  </body>
+</html>
